@@ -1,0 +1,158 @@
+:root {
+    --font-default: 'Special Elite', cursive;
+    --font-typewriter: 'IBM Plex Mono', monospace;
+    --color-bg: #fafafa;
+    --color-text: #333;
+    --color-accent: #0066cc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-default);
+    line-height: 1.6;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+header {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-typewriter);
+}
+
+.font-controls {
+    margin-top: 1rem;
+}
+
+.font-controls label {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+#font-select {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--color-accent);
+    font-family: var(--font-typewriter);
+}
+
+.gallery, .blog, .contact {
+    background-color: #fff;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.album-placeholder, .post-placeholder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.album-item, .post-item {
+    flex: 1 1 250px;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+form button {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #0052a3;
+}
+
+#form-status {
+    margin-top: 1rem;
+    font-weight: bold;
+    min-height: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #eee;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

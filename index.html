@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Συγκομιδή – Photo Blog & Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Συγκομιδή</h1>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Φωτογραφίες</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h2 class="hero-title" id="hero-text">Καλώς Ήρθατε</h2>
+        <div class="font-controls">
+            <label for="font-select">Επιλογή γραμματοσειράς:</label>
+            <select id="font-select">
+                <option value="'Special Elite', cursive">Special Elite ( máquina γραφής )</option>
+                <option value="'IBM Plex Mono', monospace">IBM Plex Mono</option>
+                <option value="'Courier New', Courier, monospace">Courier New</option>
+                <option value="'Lucida Console', Monaco, monospace">Lucida Console</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Φωτογραφίες & Εικόνες</h2>
+        <p>Εδώ θα εμφανίζονταν τα άλμπουμ με φιλτράρισμα ανά δεκαετία.</p>
+        <!-- Placeholder for album grid -->
+        <div class="album-placeholder">
+            <div class="album-item">
+                <h3>Δecade 1980s</h3>
+                <p>Προεπισκόπηση φωτογραφίας...</p>
+            </div>
+            <div class="album-item">
+                <h3>Δecade 1990s</h3>
+                <p>Προεπισκόπηση φωτογραφίας...</p>
+            </div>
+            <div class="album-item">
+                <h3>Δecade 2000s</h3>
+                <p>Προεπισκόπηση φωτογραφίας...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>Blog</h2>
+        <p>Αρθρά με επιλογήήχου και YouTube.</p>
+        <div class="post-placeholder">
+            <h3>Τίτλος άρθρου</h3>
+            <p>Περίληψη...</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Επικοινωνία</h2>
+        <form id="contact-form">
+            <label>
+                Όνομα:
+                <input type="text" name="name" required>
+            </label>
+            <label>
+                Email:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Μήνυμα:
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Αποστολή</button>
+        </form>
+        <p id="form-status"></p>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Συγκομιδή. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
